@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-querie.css">
+    <title>Lista de tarefas</title>
+
+    <script src="https://kit.fontawesome.com/282fdc0461.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="fundo-imagem ativado fundo-claro-imagem"></div>
+    <div class=" fundo-imagem fundo-escuro-imagem"></div>
+
+    <div class="posicionamento-titulo-e-alternador">
+        <div class="titulo-e-alternador">
+            <h1>Lista de Tarefas</h1>
+    
+            <div>
+                <input type="checkbox" class="checkbox" id="claro-escuro">
+    
+                <label for="claro-escuro" class="label">
+                    <img src="./images/icon-moon.svg" alt="lua">
+                    <img src="./images/icon-sun.svg" alt="sol">
+                    <div class="bola"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="fundo-geral selecionado fundo-claro">
+        <div class="campo-tarefas-mais-botoes">
+            <div class="campo-de-digitacao-mais-botao">
+                <input type="text" placeholder="Digite aqui sua tarefa...." class="campo-digitacao-tarefa campo-claro">
+                <button class="botao-tarefa botao-claro">Adicionar</button>
+            </div>
+
+            <div class="lista-de-tarefas tarefa-claro" id="lista-de-terefas">
+                
+                <!-- <div class="lista lista-clara">
+                    <div>
+                        <input type="checkbox" class="checkbox-lista">
+                        <a href="" class="tarefa">Comprar pão</a>
+                    </div>
+                    <button class="botao-lixeira-tarefa">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div> -->
+
+                <!-- <div class="lista lista-clara">
+                    <div>
+                        <input type="checkbox" 
+                        class="checkbox-lista">
+                        <a class="tarefa tarefa-checada">Cozinhar o frango para a dieta</a>
+                    </div>
+                    <button class="botao-lixeira-tarefa">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div> -->
+        
+                
+                <div class="rodape-da-lista rodape-da-lista-clara">
+                    <p> 3 itens </p>
+
+                    <div class="botoes-rodape-da-lista">
+                        <ul>
+                            <li class="li-rodape ativado"> Todas </li>
+                            <li class="li-rodape">Incompletas</li>
+                            <li class="li-rodape">Completas</li>
+                        </ul>
+                    </div>
+
+                    <a href="" class="limpar-tarefas-claro">Limpar tarefas</a>
+                </div>
+            </div>
+
+            <footer>
+                <p class="texto-rodape-da-pagina   footer-texto-claro">Deixe o seu dia mais organizado com a melhor lista de tarefas da Web</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <div class="fundo-geral fundo-escuro">
+        <div class="campo-tarefas-mais-botoes">
+            <div class="campo-de-digitacao-mais-botao">
+                <input type="text" placeholder="Digite aqui sua tarefa...." class="campo-digitacao-tarefa campo-escuro" id="campo-digitacao-tarefa">
+                <button class="botao-tarefa botao-escuro">Adicionar</button>
+            </div>
+
+            <div class="lista-de-tarefas tarefa-escuro" id="lista-de-terefas">
+                
+                <div class="lista lista-escura">
+                    <div>
+                        <input type="checkbox" class="checkbox-lista">
+                        <a href="" class="tarefa">Comprar pão</a>
+                    </div>
+                    <button class="botao-lixeira-tarefa">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div>
+                <div class="lista lista-escura">
+                    <div>
+                        <input type="checkbox" class="checkbox-lista">
+                        <a href="" class="tarefa">Fazer café</a>
+                    </div>
+                    <button class="botao-lixeira-tarefa">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div>
+                
+                
+                <div class="rodape-da-lista rodape-da-lista-escura">
+                    <p> 3 itens </p>
+                    <div class="botoes-rodape-da-lista">
+                        <ul>
+                            <li class="li-rodape ativado"> Todas </li>
+                            <li class="li-rodape">Incompletas</li>
+                            <li class="li-rodape">Completas</li>
+                        </ul>
+                    </div>
+                    <a href="" class="limpar-tarefas-escuro">Limpar tarefas</a>
+                </div>
+            </div>
+            <footer>
+                <p class="texto-rodape-da-pagina footer-texto-escuro">Deixe o seu dia mais organizado com a melhor lista de tarefas da Web</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>

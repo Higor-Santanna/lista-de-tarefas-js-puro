@@ -1,0 +1,290 @@
+.fundo-imagem.ativado{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    margin-top: -5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.fundo-claro-imagem{
+    background: var(--cor-de-fundo-tema-claro) url(../images/bg-desktop-light.jpg)no-repeat;
+    background-size: cover;
+}
+
+.fundo-escuro-imagem{
+    background: var(--cor-de-fundo-tema-claro) url(../images/bg-desktop-dark.jpg)no-repeat;
+    background-size: cover;
+}
+
+.posicionamento-titulo-e-alternador{
+    margin: 5rem 0 2rem 0;
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-e-alternador{
+    display: flex;
+    align-items: center;
+    gap: 12.2rem;
+    position: relative;
+}
+
+.titulo-e-alternador h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor-de-fundo-lista-claro);
+}
+
+.titulo-e-alternador .checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.titulo-e-alternador .label{
+    background-color: var(--cor-de-fundo-lista-escuro);
+    padding: 0.6rem;
+    width: 5rem;
+    height: 2.1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.titulo-e-alternador .label img{
+    margin-left: 6px;
+    width: 0.93rem;
+}
+
+.titulo-e-alternador .label .bola{
+    background-color: var(--cor-texto-rodape-escuro);
+    border-radius: 50%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    transform: translateX(0rem);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .bola{
+    transform: translateX(2.9rem);
+}
+
+.fundo-geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    transition: 0.2 ease-out;
+}
+
+.fundo-geral.selecionado{
+    display: inline-flex;
+}
+
+.fundo-claro{
+    background-color: var(--cor-de-fundo-tema-claro);
+}
+
+.fundo-escuro{
+    background-color: var(--cor-de-fundo-tema-escuro);
+}
+
+.campo-tarefas-mais-botoes{
+    z-index: 1;
+}
+
+.campo-de-digitacao-mais-botao{
+    width: 38rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.campo-de-digitacao-mais-botao .campo-digitacao-tarefa{
+    width: 30.4rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    font-size: 0.938rem;
+}
+
+.campo-de-digitacao-mais-botao .campo-digitacao-tarefa.campo-claro{
+    background-color: var(--cor-de-fundo-lista-claro);
+}
+
+.campo-de-digitacao-mais-botao .campo-digitacao-tarefa.campo-escuro{
+    background-color: var(--cor-de-fundo-lista-escuro);
+    color: var(--cor-texto-da-lista-escuro);
+}
+
+.campo-de-digitacao-mais-botao .campo-digitacao-tarefa:focus{
+    outline: 0;
+    border: 2px solid var(--Very-Dark-Grayish-Blue);
+}
+
+.campo-de-digitacao-mais-botao .botao-tarefa{
+    width: 7rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.campo-de-digitacao-mais-botao .botao-tarefa:hover{
+    width: 7.1rem;
+    height: 3.1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.campo-de-digitacao-mais-botao .botao-claro{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--cor-texto-opaco-claro);
+}
+
+.campo-de-digitacao-mais-botao .botao-escuro{
+    background-color: var(--cor-de-fundo-tema-claro);
+    color: var(--cor-de-fundo-tema-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas{
+    width: 38rem;
+    border-radius: 0.2rem; 
+    transition: 0.2s ease-in-out;
+}
+
+.campo-tarefas-mais-botoes .tarefa-claro{
+    background-color: var(--cor-de-fundo-lista-claro);
+}
+
+.campo-tarefas-mais-botoes .tarefa-escuro{
+    background-color: var(--cor-de-fundo-lista-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista{
+    padding: 1rem 1.3rem;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s ease-in-out;
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista-clara{
+    border-bottom: 1px solid var(--cor-texto-da-lista-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista-escura{
+    border-bottom: 1px solid var(--cor-texto-rodape-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista .tarefa{
+    margin-left: 0.5rem;
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista .tarefa.tarefa-checada{
+    color: var(--cor-botao-lista-claro);
+    text-decoration: line-through
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista-clara .tarefa{
+    color: var(--cor-texto-da-lista-clara);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista-escura .tarefa{
+    color: var(--cor-texto-da-lista-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista .botao-lixeira-tarefa{
+    font-size: 1.02rem;
+    cursor: pointer;
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista-clara .botao-lixeira-tarefa{
+    color: var(--cor-texto-da-lista-clara);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .lista-escura .botao-lixeira-tarefa{
+    background-color: var(--cor-de-fundo-lista-escuro);
+    color: var(--cor-texto-da-lista-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas  .rodape-da-lista.rodape-da-lista-clara{
+    color: var(--cor-botao-lista-claro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas  .rodape-da-lista.rodape-da-lista-escura{
+    color: var(--cor-texto-rodape-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .botoes-rodape-da-lista ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .botoes-rodape-da-lista ul .li-rodape{
+    font-weight: 700;
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista.rodape-da-lista-clara .botoes-rodape-da-lista ul li:hover{
+    cursor: pointer;
+    color: var(--cor-texto-da-lista-clara);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista.rodape-da-lista-escura .botoes-rodape-da-lista ul li:hover{
+    cursor: pointer;
+    color: var(--cor-texto-da-lista-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .botoes-rodape-da-lista ul .li-rodape.ativado{
+    color: var(--cor-botoes-selecionado-lista);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .limpar-tarefas-claro{
+    color: var(--cor-botao-lista-claro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .limpar-tarefas-escuro{
+    color: var(--cor-texto-rodape-escuro);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .limpar-tarefas-claro:hover{
+    color: var(--cor-texto-da-lista-clara);
+}
+
+.campo-tarefas-mais-botoes .lista-de-tarefas .rodape-da-lista .limpar-tarefas-escuro:hover{
+    color: var(--cor-texto-da-lista-escuro);
+}
+
+.campo-tarefas-mais-botoes footer .texto-rodape-da-pagina{
+    text-align: center;
+    margin: 4rem 0 16rem 0;
+    font-size: 0.9rem;
+}
+
+.campo-tarefas-mais-botoes footer .texto-rodape-da-pagina.footer-texto-claro{
+    color: var(--cor-botao-lista-claro);
+}
+
+.campo-tarefas-mais-botoes footer .texto-rodape-da-pagina.footer-texto-escuro{
+    color: var(--cor-texto-rodape-escuro);
+}
+
+/* FUNDO ESCURO */

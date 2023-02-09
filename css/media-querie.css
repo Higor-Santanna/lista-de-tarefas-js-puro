@@ -1,0 +1,58 @@
+@media(max-width: 660px){
+    .posicionamento-titulo-e-alternador{
+        padding: 0 4.6rem;
+    }
+
+    .campo-de-digitacao-mais-botao{
+        width: 30rem;
+    }
+
+    .campo-de-digitacao-mais-botao .campo-digitacao-tarefa{
+        width: 24rem; 
+    }
+
+    .campo-de-digitacao-mais-botao .botao-tarefa{
+        width: 5rem;
+    }
+
+    .campo-de-digitacao-mais-botao .botao-tarefa:hover{
+        width: 5.1rem;
+    }
+
+    .campo-tarefas-mais-botoes .lista-de-tarefas{
+        width: 30rem;
+    }
+}
+
+@media(max-width: 425px){
+    .fundo-claro-imagem{
+        background: var(--cor-de-fundo-tema-claro) url(../images/bg-mobile-light.jpg)no-repeat;
+        background-size: cover;
+    }
+    
+    .fundo-escuro-imagem{
+        background: var(--cor-de-fundo-tema-claro) url(../images/bg-mobile-dark.jpg)no-repeat;
+        background-size: cover;
+    }
+    
+    .posicionamento-titulo-e-alternador{
+        padding: 0 10rem;
+    }
+
+    .campo-de-digitacao-mais-botao{
+        width: 25rem;
+    }
+
+    .campo-de-digitacao-mais-botao .campo-digitacao-tarefa{
+        width: 19rem; 
+    }
+
+    .campo-de-digitacao-mais-botao .botao-tarefa{
+        width: 4rem;
+    }
+
+
+    .campo-tarefas-mais-botoes .lista-de-tarefas{
+        width: 25rem;
+    }
+}

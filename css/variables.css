@@ -1,0 +1,16 @@
+:root{
+    --cor-botoes-selecionado-lista: hsl(220, 98%, 61%);
+    --cor-de-fundo-checkbox: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    --cor-de-fundo-tema-claro: hsl(233, 11%, 84%);
+    --cor-de-fundo-lista-claro: hsl(0, 0%, 98%);
+    --cor-texto-opaco-claro: hsl(236, 33%, 92%);
+    --cor-botao-lista-claro: hsl(236, 9%, 61%);
+    --cor-texto-da-lista-clara: hsl(235, 19%, 35%);
+    --cor-de-fundo-tema-escuro: hsl(235, 21%, 11%);
+    --cor-de-fundo-lista-escuro: hsl(235, 24%, 19%);
+    --cor-texto-da-lista-escuro: hsl(234, 39%, 85%);
+    --cor-texto-da-lista-hover-escuro: hsl(236, 33%, 92%);
+    --cor-botoes-lista-escuro: hsl(234, 11%, 52%);
+    --cor-texto-rodape-escuro: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
