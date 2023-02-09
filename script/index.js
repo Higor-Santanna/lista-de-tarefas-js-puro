@@ -55,7 +55,8 @@ const saveTodo = (text) =>{
 botaoAdicionarTarefa.forEach(function(button){
     button.addEventListener("click", () =>{
 
-        const campoAdicionarTarefa = document.querySelectorAll('campo-digitacao-tarefa');
+        const campoAdicionarTarefa = document.querySelector("input[type='text']");
+        console.log(campoAdicionarTarefa)
         
         let inputValidado = campoAdicionarTarefa.value
 
@@ -64,7 +65,7 @@ botaoAdicionarTarefa.forEach(function(button){
         // })
  
         if(inputValidado){
-            saveTodo(inputValidado);
+            console.log("funcionou")
         } else {
             alert("O campo está vazio, por favor adicione uma tarefa");
         }
