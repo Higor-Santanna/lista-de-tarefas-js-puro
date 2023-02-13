@@ -44,19 +44,20 @@
         <div class="campo-tarefas-mais-botoes">
             <div class="campo-de-digitacao-mais-botao">
                 <input type="text" placeholder="Digite aqui sua tarefa...." class="campo-digitacao-tarefa campo-claro" id="campo-digitacao-tarefa-clara">
-                <button class="botao-tarefa botao-claro">Adicionar</button>
+                <button class="botao-tarefa botao-claro" id="botao-claro-adicionar">Adicionar</button>
             </div>
 
-            <div class="lista-de-tarefas tarefa-claro" id="lista-de-terefas">
+            <div class="lista-de-tarefas tarefa-claro" id="lista-de-terefas-clara">
                 
-                <!-- <div class="lista lista-clara">
-                    <div>
+                <div class="lista lista-clara">
+                    <div class="pai-do-check-tarefa checada">
+                        <div class="checkbox"></div>
                         <a href="" class="tarefa">Comprar pão</a>
                     </div>
                     <button class="botao-lixeira-tarefa">
                         <i class="fa-regular fa-trash-can"></i>
                     </button>
-                </div> -->
+                </div> 
 
                 <!-- <div class="lista lista-clara">
                     <div>
@@ -93,14 +94,15 @@
     <div class="fundo-geral fundo-escuro">
         <div class="campo-tarefas-mais-botoes">
             <div class="campo-de-digitacao-mais-botao">
-                <input type="text" placeholder="Digite aqui sua tarefa...." class="campo-digitacao-tarefa campo-escuro" id="campo-digitacao-tarefa-escuro">
-                <button class="botao-tarefa botao-escuro">Adicionar</button>
+                <input type="text" placeholder="Digite aqui sua tarefa...." class="campo-digitacao-tarefa campo-escuro" id="campo-digitacao-tarefa-escura">
+                <button class="botao-tarefa botao-escuro" id="botao-escuro-adicionar">Adicionar</button>
             </div>
 
-            <div class="lista-de-tarefas tarefa-escuro" id="lista-de-terefas">
+            <div class="lista-de-tarefas tarefa-escuro" id="lista-de-terefas-escura">
                 
                 <div class="lista lista-escura">
-                    <div>
+                    <div class="pai-do-check-tarefa">
+                        <div class="checkbox"></div>
                         <a href="" class="tarefa">Comprar pão</a>
                     </div>
                     <button class="botao-lixeira-tarefa">
@@ -115,7 +117,6 @@
                         <i class="fa-regular fa-trash-can"></i>
                     </button>
                 </div>
-                
                 
                 <div class="rodape-da-lista rodape-da-lista-escura">
                     <p> 3 itens </p>
@@ -135,6 +136,8 @@
         </div>
     </div>
 
+    <script src="./script/fundo-claro.js"></script>
+    <script src="./script/fundo-escuro.js"></script>
     <script src="./script/index.js"></script>
 </body>
 </html>
