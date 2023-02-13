@@ -1,6 +1,6 @@
 const botaoQueAlteraFundo = document.getElementById('claro-escuro');
 const imagemDeFundo = document.querySelectorAll('.fundo-imagem');
-const corDoLayout = document.querySelectorAll('.fundo-geral')
+const corDoLayout = document.querySelectorAll('.fundo-geral');
 
 // const botaoAdicionarTarefa = document.querySelectorAll(".botao-tarefa");
 // const campoAdicionarTarefa = document.querySelectorAll("input[type='text']");
@@ -70,3 +70,22 @@ function removendoImagemDeFundo() {
 //         }
 //     })
 // }
+
+/* CÓDIGO QUE CHECA A TAREFA */
+
+const divTarefaECheck = document.querySelectorAll(".pai-do-check-tarefa");
+console.log(divTarefaECheck)
+
+// function tarefaChecada(){
+//     divTarefaECheck.addEventListener("click", checandoTarefa)
+
+//     function checandoTarefa() {
+//         divTarefaECheck.classList.toggle('checada');
+//     }
+// }
+
+divTarefaECheck.addEventListener("click", checandoTarefa)
+
+function checandoTarefa() {
+    divTarefaECheck.classList.toggle('checada');
+}

@@ -194,6 +194,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .campo-tarefas-mais-botoes .lista-de-tarefas .lista .pai-do-check-tarefa .checkbox{
@@ -208,7 +209,7 @@
 }
 
 .campo-tarefas-mais-botoes .lista-de-tarefas .lista .pai-do-check-tarefa.checada .checkbox{
-    background-color: var(--cor-botoes-selecionado-lista);
+    background: var(--cor-botoes-selecionado-lista) url(../images/icon-check.svg) no-repeat center;
 }
 
 .campo-tarefas-mais-botoes .lista-de-tarefas .lista .tarefa{

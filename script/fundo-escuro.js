@@ -8,10 +8,14 @@ const saveTodoEscuro = (text) => {
     containerTarefa.classList.add("lista-escura")
 
     const divCheckETarefa = document.createElement("div");
+    divCheckETarefa.classList.add("pai-do-check-tarefa");
 
+    const check = document.createElement("div");
+    check.classList.add("checkbox");
     const tarefa = document.createElement("a");
     tarefa.classList.add("tarefa");
     tarefa.innerText = text //adiciona o texto, ele recebe da função e atraves desta linha ele é adicionado na tela
+    divCheckETarefa.appendChild(check);
     divCheckETarefa.appendChild(tarefa); // adiciona a tarefa dentro da div
     containerTarefa.appendChild(divCheckETarefa);//adiciona a divCheckETarefa dentro do containerTarefa
 
