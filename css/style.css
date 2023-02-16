@@ -165,7 +165,6 @@
 
 .campo-tarefas-mais-botoes .tarefa-claro{
     background-color: var(--cor-de-fundo-lista-claro);
-    /* background-color: red; */
 }
 
 .campo-tarefas-mais-botoes .tarefa-escuro{

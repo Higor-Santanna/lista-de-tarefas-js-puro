@@ -9,6 +9,7 @@ const saveTodoEscuro = (text) => {
 
     const divCheckETarefa = document.createElement("div");
     divCheckETarefa.classList.add("pai-do-check-tarefa");
+    divCheckETarefa.classList.add("check");
 
     const check = document.createElement("div");
     check.classList.add("checkbox");
